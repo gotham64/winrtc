@@ -1,5 +1,10 @@
 @echo off
 
+REM Prerequisities
+echo.
+echo Installing Visual Stuio 2019 workloads...
+call "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" modify --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --add Microsoft.VisualStudio.Workload.NativeDesktop;includeRecommended --add Microsoft.VisualStudio.Workload.Universal;includeRecommended --add Microsoft.VisualStudio.Component.VC.14.24.MFC;includeRecommended --quiet
+
 REM Getting depot_tools
 echo.
 echo Cloneing the depot_tools repo in the root of the c:drive...
